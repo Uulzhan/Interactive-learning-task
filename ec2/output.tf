@@ -1,9 +1,9 @@
 output "EC2Output" {
     value = <<EOF
 
-        Machine1 has the following IP address   ${aws_instance.terraform_instance[0].public_ip}
-        Machine1 has the following ID           ${aws_instance.terraform_instance[0].id}
-        Machine1 is in                          ${aws_instance.terraform_instance[0].availability_zone}
+        Machine has the following IP address   ${aws_instance.terraform_instance.public_ip}
+        Machine has the following ID           ${aws_instance.terraform_instance.id}
+        Machine is in                          ${aws_instance.terraform_instance.availability_zone}
 
         
     EOF
