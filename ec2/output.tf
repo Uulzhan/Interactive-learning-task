@@ -1,13 +1,15 @@
-output "EC2Output" {
-    value = <<EOF
-
-        Machine has the following IP address   ${aws_instance.terraform_instance.public_ip}
-        Machine has the following ID           ${aws_instance.terraform_instance.id}
-        Machine is in                          ${aws_instance.terraform_instance.availability_zone}
-        Machine 
-
-        
-    EOF
+output "AZ"  {
+  value  = aws_instance.terraform_instance.availability_zone
 }
 
+output "public_ip" {
+    value = ${aws_instance.terraform_instance.public_ip}
+}
 
+output "instance_id" {
+    value = ${aws_instance.terraform_instance.id}
+}
+
+output "region" {
+    value = ${aws_instance.terraform_instance.region}
+}
