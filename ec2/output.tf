@@ -1,5 +1,5 @@
-output "AZ"  {
-   value = aws_instance.terraform_instance.availability_zone
+output "AZ" {
+    value = aws_instance.terraform_instance.availability_zone
 }
 
 output "public_ip" {
