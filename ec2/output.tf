@@ -11,5 +11,5 @@ output "instance_id" {
 }
 
 output "region" {
-    value = aws_instance.terraform_instance.region
+    value = "us-east-1"
 }
