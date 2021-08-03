@@ -1,6 +1,5 @@
 resource "aws_security_group" "external_by_terraform" {
-  name        = "external_by_terraform"
-  description = "interactive learning tasks"
+  name        = "allow_inbound_traffic"
   ingress {
     description      = "TLS from VPC"
     from_port        = 22
