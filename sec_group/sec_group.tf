@@ -1,5 +1,5 @@
-resource "aws_security_group" "interactive-learning" {
-  name        = "interactive-learning"
+resource "aws_security_group" "external_by_terraform" {
+  name        = "external_by_terraform"
   description = "interactive learning tasks"
   ingress {
     description      = "TLS from VPC"
