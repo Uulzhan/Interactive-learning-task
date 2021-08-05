@@ -8,15 +8,15 @@ resource "aws_iam_user" "bob" {
 
 resource "aws_iam_group" "sysusers" {
   name = "sysusers"
-  
+
 }
 
 resource "aws_iam_group_membership" "team" {
-    name = "sysusers-membership"
+  name = "sysusers-membership"
 
-    users = [
-        aws_iam_user.bob.name,
-    ]
+  users = [
+    aws_iam_user.bob.name,
+  ]
 
-    group = aws_iam_group.sysusers.name
+  group = aws_iam_group.sysusers.name
 }
