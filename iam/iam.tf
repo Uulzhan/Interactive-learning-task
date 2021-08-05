@@ -12,11 +12,7 @@ resource "aws_iam_group" "sysusers" {
 }
 
 resource "aws_iam_user_group_membership" "team" {
-  name = "sysusers-membership"
-
-  users = [
-    aws_iam_user.bob.name,
-  ]
+  user = aws_iam_user.bob.name
 
   groups = aws_iam_group.sysusers.name
 }
