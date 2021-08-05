@@ -1,18 +1,18 @@
 resource "aws_iam_user" "user" {
-    name = "bob"
-    path = "/system/"
+  name = "bob"
+  path = "/system/"
 
-    tags = {
-        Team = "DevOps"
-    }
+  tags = {
+    Team = "DevOps"
+  }
 
 }
 
 resource "aws_iam_group" "sysusers" {
-    name = "bob"
-    path = "/user/"
+  name = "bob"
+  path = "/user/"
 
-    tags = {
-        Team = "DevOps"
-    } 
+  tags = {
+    Team = "DevOps"
+  }
 }
