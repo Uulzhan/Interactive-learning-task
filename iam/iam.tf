@@ -7,3 +7,9 @@ resource "aws_iam_user" "user" {
   }
 
 }
+
+resource "aws_iam_group" "sysusers" {
+  name = "sysusers"
+  path = "/users/"
+
+}
