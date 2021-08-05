@@ -18,5 +18,5 @@ resource "aws_iam_user_group_membership" "team" {
     aws_iam_user.bob.name,
   ]
 
-  group = aws_iam_group.sysusers.name
+  groups = aws_iam_group.sysusers.name
 }
